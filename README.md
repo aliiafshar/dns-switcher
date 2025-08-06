@@ -12,6 +12,7 @@ Supports both GUI (Tkinter) and CLI (terminal) modes based on your environment.
 
 ```bash
 sudo python3 dns_switcher.py
+```
 
 🔧 DNS Providers Included
 
@@ -43,9 +44,6 @@ Quad9: 9.9.9.9, 149.112.112.112
 
 Comodo Secure DNS: 8.26.56.26, 8.20.247.20
 
-
-
-```
 
 📦 Dependencies
 Only requires Python 3 (Tkinter is pre-installed on most distros).
