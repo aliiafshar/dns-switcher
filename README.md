@@ -16,8 +16,6 @@ sudo python3 dns_switcher.py
 
 🔧 DNS Providers Included
 
-DNS Providers Included:
-
 Shecan: 178.22.122.100, 185.51.200.2
 
 403: 10.202.10.202, 10.202.10.102
