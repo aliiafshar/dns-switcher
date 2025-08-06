@@ -14,6 +14,9 @@ Supports both GUI (Tkinter) and CLI (terminal) modes based on your environment.
 sudo python3 dns_switcher.py
 
 🔧 DNS Providers Included
+
+DNS Providers Included:
+
 Shecan: 178.22.122.100, 185.51.200.2
 
 403: 10.202.10.202, 10.202.10.102
@@ -29,6 +32,18 @@ Asiatech: 194.36.174.161, 178.22.122.100
 RadarGame: 10.202.10.10, 10.202.10.11
 
 Electro: 78.157.42.100, 78.157.42.101
+
+Cloudflare: 1.1.1.1, 1.0.0.1
+
+Google: 8.8.8.8, 8.8.4.4
+
+OpenDNS: 208.67.222.222, 208.67.220.220
+
+Quad9: 9.9.9.9, 149.112.112.112
+
+Comodo Secure DNS: 8.26.56.26, 8.20.247.20
+
+
 
 ```
 
