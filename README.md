@@ -30,6 +30,4 @@ OpenDNS: 208.67.222.222, 208.67.220.220
 Quad9: 9.9.9.9, 149.112.112.112
 Comodo Secure DNS: 8.26.56.26, 8.20.247.20
 LagZero : 95.38.132.152, 95.38.132.153
-
-📦 Dependencies
-Only requires Python 3 (Tkinter is pre-installed on most distros).
+DnsPro : 87.107.110.109, 87.107.110.110
