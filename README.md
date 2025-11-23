@@ -1,47 +1,74 @@
-# DNS Switcher for Linux
+# DNS Switcher / سوییچر DNS
 
-A simple Python script to switch between various Iranian DNS providers.  
-Supports both GUI (Tkinter) and CLI (terminal) modes based on your environment.
+A simple script to switch between various Iranian DNS providers.
+Supports **Linux** (Python) and **Windows** versions, with both **GUI (Tkinter)** and **CLI (terminal)** modes based on your environment.
 
-## ✅ Features
-- Selectable DNS providers like Shecan, 403, RadarGame, and more.
-- Applies DNS by writing to `/etc/resolv.conf`.
-- Automatically detects if GUI is available, otherwise runs in terminal.
+یک اسکریپت ساده برای تغییر DNS به سرورهای ایرانی.
+نسخه‌های **لینوکس** (پایتون) و **ویندوز** را پشتیبانی می‌کند و هم **GUI** و هم **CLI** دارد.
 
-## 🚀 How to Run
+---
+
+## ✅ Features / ویژگی‌ها
+
+* Selectable DNS providers like Shecan, 403, RadarGame, and more.
+* انتخاب ارائه‌دهندگان DNS مثل Shecan، 403، RadarGame و غیره
+* Applies DNS automatically:
+
+  * **Linux:** writes to `/etc/resolv.conf`
+  * **ویندوز:** تغییر DNS روی کارت شبکه انتخابی
+* Automatically detects if GUI is available, otherwise runs in terminal
+* **Windows version:** GUI included and supports per-network adapter selection
+
+  * Works for Wi-Fi, Ethernet, and other adapters
+
+---
+
+## 🚀 How to Run / نحوه اجرا
+
+### Linux / لینوکس
 
 ```bash
 sudo python3 dns_switcher.py
 ```
 
-🔧 DNS Providers Included
+### Windows / ویندوز
 
-Shecan: 178.22.122.100, 185.51.200.2
+* Run `dns_switcher.exe` (GUI) or `dns_switcher.py` (CLI)
+* Run the GUI and select the network adapter (Wi-Fi, Ethernet, etc.)
+* اجرای GUI و انتخاب کارت شبکه (Wi-Fi, Ethernet و غیره)
 
-403: 10.202.10.202, 10.202.10.102
+---
 
-HostIran: 172.29.0.100, 172.29.2.100
+## 🔧 DNS Providers Included / سرورهای DNS موجود
 
-Begzar: 185.55.226.26, 185.55.225.25
+| Provider / ارائه‌دهنده | DNS Servers / سرورها           |
+| ---------------------- | ------------------------------ |
+| Shecan                 | 178.22.122.100, 185.51.200.2   |
+| 403                    | 10.202.10.202, 10.202.10.102   |
+| HostIran               | 172.29.0.100, 172.29.2.100     |
+| Begzar                 | 185.55.226.26, 185.55.225.25   |
+| HamAva                 | 185.20.163.2, 185.20.163.4     |
+| Asiatech               | 194.36.174.161, 178.22.122.100 |
+| RadarGame              | 10.202.10.10, 10.202.10.11     |
+| Electro                | 78.157.42.100, 78.157.42.101   |
+| Cloudflare             | 1.1.1.1, 1.0.0.1               |
+| Google                 | 8.8.8.8, 8.8.4.4               |
+| OpenDNS                | 208.67.222.222, 208.67.220.220 |
+| Quad9                  | 9.9.9.9, 149.112.112.112       |
+| Comodo Secure DNS      | 8.26.56.26, 8.20.247.20        |
+| LagZero                | 95.38.132.152, 95.38.132.153   |
+| DnsPro                 | 87.107.110.109, 87.107.110.110 |
 
-HamAva: 185.20.163.2, 185.20.163.4
+---
 
-Asiatech: 194.36.174.161, 178.22.122.100
+## 🆕 Changelog / تغییرات نسخه جدید
 
-RadarGame: 10.202.10.10, 10.202.10.11
+* Added **Windows version**
 
-Electro: 78.157.42.100, 78.157.42.101
+  * اضافه شدن نسخه ویندوز
+* GUI available if detected
 
-Cloudflare: 1.1.1.1, 1.0.0.1
+  * اضافه شدن رابط گرافیکی (GUI) در صورت موجود بودن
+* Per-network adapter DNS selection (Wi-Fi, Ethernet, etc.)
 
-Google: 8.8.8.8, 8.8.4.4
-
-OpenDNS: 208.67.222.222, 208.67.220.220
-
-Quad9: 9.9.9.9, 149.112.112.112
-
-Comodo Secure DNS: 8.26.56.26, 8.20.247.20
-
-LagZero : 95.38.132.152, 95.38.132.153
-
-DnsPro : 87.107.110.109, 87.107.110.110
+  * انتخاب کارت شبکه برای اعمال تنظیمات DNS

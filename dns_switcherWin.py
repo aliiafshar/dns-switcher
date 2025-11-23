@@ -149,13 +149,17 @@ def gui_mode():
                 messagebox.showwarning("Warning", "Please select at least one network interface.")
                 return
             
-            # Close GUI and apply DNS
-            root.destroy()
+            # Apply DNS in the background
+            result = set_dns(dns_options[selected_dns], selected_interfaces)
             
-            if set_dns(dns_options[selected_dns], selected_interfaces):
-                print(f"\n{selected_dns} DNS applied successfully!")
+            if result:
+                messagebox.showinfo("Success", f"{selected_dns} DNS applied successfully to {len(selected_interfaces)} interface(s)!")
             else:
-                print("\nFailed to set DNS. Check output above for details.")
+                messagebox.showerror("Error", "Failed to set DNS. Make sure you're running as Administrator.")
+            
+            # Close the window after showing result
+            root.quit()
+            root.destroy()
                 
         except tk.TclError:
             messagebox.showwarning("Warning", "Please select a DNS provider first.")
@@ -163,7 +167,7 @@ def gui_mode():
     # Get all interfaces first
     all_interfaces = get_active_interfaces()
     if not all_interfaces:
-        messagebox.showerror("Error", "Could not detect any active network interfaces.")
+        print("Error: Could not detect any active network interfaces.")
         return
     
     root = tk.Tk()
