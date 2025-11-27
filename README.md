@@ -33,7 +33,7 @@ sudo python3 dns_switcher.py
 
 ### Windows / ویندوز
 
-* Run `dns_switcher.exe` (GUI) or `dns_switcher.py` (CLI)
+* Run `dns_switcherWin.py` (GUI) or `dns_switcher.py` (CLI)
 * Run the GUI and select the network adapter (Wi-Fi, Ethernet, etc.)
 * اجرای GUI و انتخاب کارت شبکه (Wi-Fi, Ethernet و غیره)
 
