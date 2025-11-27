@@ -32,10 +32,11 @@ sudo python3 dns_switcher.py
 ```
 
 ### Windows / ویندوز
+run as administrator (Powershell) :
 
-* Run `dns_switcherWin.py` (GUI) or `dns_switcher.py` (CLI)
-* Run the GUI and select the network adapter (Wi-Fi, Ethernet, etc.)
-* اجرای GUI و انتخاب کارت شبکه (Wi-Fi, Ethernet و غیره)
+```bash
+python3 dns_switcherWin.py
+```
 
 ---
 
