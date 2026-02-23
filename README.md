@@ -6,7 +6,7 @@ Supports **Linux** (Python) and **Windows** versions, with both **GUI (Tkinter)*
 یک اسکریپت ساده برای تغییر DNS به سرورهای ایرانی.
 نسخه‌های **لینوکس** (پایتون) و **ویندوز** را پشتیبانی می‌کند و هم **GUI** و هم **CLI** دارد.
 
-![Windows Screenshot](./ScreenshotWin.png)
+![Windows Screenshot](./ScreenshotWindows.png)
 
 ![Linux Screenshot](./ScreenshotLinux.png)
 
