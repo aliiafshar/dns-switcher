@@ -34,12 +34,21 @@ dns_options = {
 
 def set_dns(dns_list):
     try:
+        # تلاش برای نوشتن مستقیم
         with open("/etc/resolv.conf", "w") as f:
             for dns in dns_list:
                 f.write(f"nameserver {dns}\n")
         messagebox.showinfo("Success", "DNS updated successfully.")
     except PermissionError:
-        subprocess.run(["pkexec", "python3"] + ["dns_switcherCtk.py"])
+        # ساخت دستور برای pkexec فقط برای نوشتن
+        cmd = "echo '{}' | pkexec tee /etc/resolv.conf > /dev/null".format(
+            "\n".join(f"nameserver {dns}" for dns in dns_list)
+        )
+        try:
+            subprocess.run(cmd, shell=True, check=True)
+            messagebox.showinfo("Success", "DNS updated successfully (via root).")
+        except subprocess.CalledProcessError:
+            messagebox.showerror("Error", "Failed to write DNS. Root permissions required.")
     except Exception as e:
         messagebox.showerror("Error", str(e))
 
