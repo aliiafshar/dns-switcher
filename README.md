@@ -8,6 +8,8 @@ Supports **Linux** (Python) and **Windows** versions, with both **GUI (Tkinter)*
 
 ![Windows Screenshot](./Screenshot.png)
 
+![Linux Screenshot](./Screenshot2.png)
+
 ---
 
 ## ✅ Features / ویژگی‌ها
@@ -93,9 +95,20 @@ DNS_Switcher.exe
 | Comodo Secure DNS      | 8.26.56.26, 8.20.247.20        | Security / امنیت      |
 
 ---
+🆕 Changelog / تغییرات نسخه جدید
 
-## 🆕 Changelog / تغییرات نسخه جدید
+Added Windows version and exe
 
-* Added **Windows version** and **exe**
-* GUI available if detected
-* Per-network adapter DNS selection (Wi-Fi, Ethernet, etc.)
+GUI available if detected
+
+Per-network adapter DNS selection (Wi-Fi, Ethernet, etc.)
+
+Linux version redesigned with CustomTkinter and dark mode
+
+Added manual DNS entry alongside preset providers on Linux
+
+Supports root access via pkexec for modifying /etc/resolv.conf
+
+Packaged as AppImage for easy execution on Linux without installing dependencies
+
+Fully compatible with CLI mode on Linux if no display is available

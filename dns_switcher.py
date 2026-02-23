@@ -39,7 +39,7 @@ def set_dns(dns_list):
                 f.write(f"nameserver {dns}\n")
         print("DNS updated successfully.")
     except PermissionError:
-        print("Permission denied: Please run the script as root.")
+        z
     except Exception as e:
         print(f"Error: {e}")
 
