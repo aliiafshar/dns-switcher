@@ -168,13 +168,13 @@ def gui_mode():
 
     ctk.CTkLabel(
         header,
-        text="DNS Switcher",
+        text="sudocode DNS Switcher",
         font=ctk.CTkFont(size=28, weight="bold")
     ).pack(anchor="w")
 
     ctk.CTkLabel(
         header,
-        text="Modern Network DNS Manager",
+        text="Network DNS Manager",
         text_color="gray"
     ).pack(anchor="w")
 
