@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 
 # ==============================
-# DNS OPTIONS (بدون تغییر)
+# DNS OPTIONS
 # ==============================
 
 dns_options = {
@@ -38,7 +38,7 @@ dns_options = {
 
 
 # ==============================
-# NETWORK FUNCTIONS (دست نخورده)
+# NETWORK FUNCTIONS 
 # ==============================
 
 def get_active_interfaces():
